@@ -1,0 +1,23 @@
+# Set the environment variable
+export PATH=/Users/leisun/kafka0.8.2.2/bin:$PATH
+
+# Set alias
+alias ls='ls -G'
+alias hexoPush='hexo clean;hexo g;hexo d'
+alias hexoLocal='hexo clean;hexo g;hexo s'
+alias goto_Workspace='cd ~/Documents/workspace'
+alias clone='git clone'
+
+# Some contidion setting
+
+# Git auto bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+# Show branch name in the terminal.
+
+parse_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
