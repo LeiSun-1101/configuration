@@ -12,6 +12,7 @@ end_of_line = crlf
 [{lib,src,test}/**.js]
 indent_style = space
 indent_size = 2
+max_line_length = 100
 
 [src/**.{h,cc}]
 indent_style = space
