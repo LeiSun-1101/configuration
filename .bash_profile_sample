@@ -17,6 +17,7 @@ parse_git_branch() {
 PS1="\\u@\\h \\[\\033[32m\\]\\W\\[\\033[33m\\]\\$(parse_git_branch)\\[\\033[00m\\]$ "
 export PS1
 
+
 # Other setting
 alias ls='ls -G'
 alias goto_Workspace='cd ~/Documents/workspace'
