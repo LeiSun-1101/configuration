@@ -4,6 +4,7 @@
         "node": true
     },
     "extends": "eslint:recommended",
+    "plugins": ["promise"],
     "parserOptions": {
         "sourceType": "module"
     },
@@ -25,10 +26,21 @@
             "always"
 
         ],
-        "no-mixed-require":"warn",
-        "global-require":"warn",
-        "no-new-require":"warn",
+        "no-mixed-require": "warn",
+        "global-require": "warn",
+        "no-new-require": "warn",
         "callback-return": ["error", ["callback", "func", "cb", "next",
-            "send.error", "send.success", "done"]]
+            "send.error", "send.success", "done"
+        ]],
+        "promise/always-return": "error",
+        "promise/param-names": "error",
+        "promise/catch-or-return": "error",
+        "promise/no-native": "off",
+        "promise/no-return-wrap": "warn",
+        "promise/no-nesting": "warn",
+        "promise/no-promise-in-callback": "warn",
+        "promise/no-callback-in-promise": "warn",
+        "promise/avoid-new": "off",
+        "promise/no-return-in-finally": "warn"
     }
 }

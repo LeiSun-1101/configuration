@@ -1,6 +1,6 @@
 #! /bin/bash
 ## Set Path
-export PATH=/Users/leisun/kafka0.8.2.2/bin:$PATH
+export PATH=$PATH
 
 
 ## Setting Git
