@@ -18,7 +18,7 @@
         7. Project Manager
         8. Code Spell Check
     2. Eclipse
-    3. Vim
+    3. Intellij Idea
 
 3. Other Tools
     1. Alfred

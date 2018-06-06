@@ -1,9 +1,9 @@
 # Git
 
 * **Git Auto Completion**
-  1. Install auto-completion
+  1. Install bash-completion
     ````
-    brew install auto-completion
+    brew install bash-completion
     ````
   2. Add the following command into the ~/.bash_profile
     ````
@@ -18,13 +18,17 @@
   parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
   }
-  export PS1="\u@\h \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+  export PS1="\u@\h \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$ "
   ````
 
 * **[Optional] Change Git Default Editor**
+  ```
   git config --global core.editor "code --wait" (cmd + shift + p in the vscode and install code in $PATH)
+  ```
 
 # Bash
 
 * **Install shellcheck**
+  ```
   brew install shellcheck
+  ```
